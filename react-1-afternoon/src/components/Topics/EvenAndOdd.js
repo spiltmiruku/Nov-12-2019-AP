@@ -17,13 +17,21 @@ export default class EvenAndOdd extends Component {
     }
 
     assignEvenAndOdds(userInput) {
-       for(let i = 0; i < arr.length; i++)
-       if (arr[i] % 2 === 0){
-           arr[i].push
-       }
-       else (arr[i])
+        let arr = userInput.split(',');
+        let evens = [];
+        let odds = [];
+
+       for(let i = 0; i < arr.length; i++){
+            if (arr[i] % 2 === 0){
+            arr[i].push( parseInt(arr[i], 10) );
+       }else {
+           odds.push( parseInt (arr[i], 10) );
         }
+       }
+       this.setState({ evenArray: evens, oddArray: odds});
     }
+
+
     render(){
     
     return (
