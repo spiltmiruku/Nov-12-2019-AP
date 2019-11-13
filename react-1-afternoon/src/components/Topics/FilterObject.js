@@ -53,7 +53,6 @@ filterVeggies(prop) {
 }
 
 
-
     render(){
         return (
             <div className='puzzleBox filterObjectPB'>
