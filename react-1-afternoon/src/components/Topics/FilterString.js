@@ -41,4 +41,3 @@ filterCars(userInput){
         )
     }
 }
-
